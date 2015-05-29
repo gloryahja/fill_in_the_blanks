@@ -1,0 +1,14 @@
+<h1>The Bodacious Bru</h1>
+
+<p><%= @post.bru_name %></p>
+<p><%= @post.title %></p>
+<p><%= @post.body %></p>
+
+
+
+
+
+
+<%= link_to "All Posts", "/posts" %>
+<%= link_to "Edit", edit_post_path %>
+<%= link_to "Delete", post_path, method: :delete, data: {confirm: "REALLY?"} %>
